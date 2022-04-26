@@ -1,0 +1,19 @@
+<div style="margin:0px auto; height: 5rem;">
+    <div style="float:left; margin:0;display: inline;">
+      <p class="title">MineX</p>
+      <p class="subtitle", id="casino">Monitoring {{data.server_count}} servers now</p>
+    </div>
+    <!-- Меню -->
+    <div style="float:right; margin:0;display: inline;">
+      {% if not data.hidden %}
+        {% if data.authorized %}
+          <p id="session" class="user-session", style="padding-right: 4px">{{data.user_id}} /</p>
+          <a href="/auth/save-session">Log out</a>
+        {% else %}
+          <p id="session" class="user-session", style="padding-right: 4px">You're not authorized /</p>
+          <a href="/?action=login">Log in</a>
+        {% endif %}
+      {% endif %}      
+    </div>        
+    <!-- Конец меню -->
+  </div>

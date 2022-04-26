@@ -1,0 +1,19 @@
+.news-block{
+  margin: 0 auto;
+  background-color: #1f1f1f;
+  border: #2f2f2f 2px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-width: 8rem;
+}
+.news-header{
+    font-size: 24px;
+}
+
+.news-timestamp{
+    font-size: 12px;    
+}
+.news-content{
+    padding-top: 1rem;
+}

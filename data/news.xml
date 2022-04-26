@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<news>
+    <post>
+        <timestamp>26/04/22 at 22:07</timestamp>
+        <title>RU language support</title>
+        <text>Unfortunately, Jinja does not work with RU lang, so all service will be in EN</text>
+    </post>
+    <post>
+        <timestamp>26/04/22 at 21:58</timestamp>
+        <title>News block added</title>
+        <text>Now I can show all changelog here :)</text>
+    </post>
+</news>

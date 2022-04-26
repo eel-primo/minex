@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block page_content %}
+{% for server in data.servers %}
+    <div class="news-block">
+        <!--Заголовок-->
+        <p class="news-header">{{server.title}}</p>
+        <!--Дата публикации-->
+        <p class="news-timestamp">{{block.ip}}</p>
+    </div>
+{% endfor %}
+<div class="fab-container">
+    <div class="fab fab-icon-holder">
+      <img src="{{ url_for('static', path='/images/icons-add-50.svg') }}", class="add">
+    </div>
+</div>
+{% endblock %}

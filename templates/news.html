@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block page_content %}
+{% for block in data.news %}
+    <div class="news-block">
+        <!--Заголовок-->
+        <p class="news-header">{{block.title}}</p>
+        <!--Дата публикации-->
+        <p class="news-timestamp">{{block.timestamp}}</p>
+        <!--Контент-->
+        <p class="news-content">{{block.text}}</p>
+    </div>
+{% endfor %}
+{% endblock %}

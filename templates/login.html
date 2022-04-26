@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+<div style="padding-top: 3rem;">
+    <form name="login", action="/auth/load-session", method="post">
+        <p style="padding-bottom: 0.75rem;">Введи уникальный ключ аккаунта</p>
+        <input type="text" name="uuid" size="36" style="fill-opacity: 0;"> <button type="submit">Войти</button>
+        <p style="padding-top: 0.75rem; color: red;">{{data.error}}</p>
+    </form>
+    <p style="display:inline; padding-right: 5px">Впервые здесь?</p>
+    <a href="/auth/create-session">Зарегестрируйся!</a>
+</div>
+{% endblock %}
